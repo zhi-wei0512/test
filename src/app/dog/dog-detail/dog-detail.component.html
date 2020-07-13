@@ -1,0 +1,17 @@
+<!-- <p-table [value]="dog"> -->
+<div *ngIf="dog" id="dog-deatil">
+  <div>
+    <label for="name">姓名</label>
+    <input type="text" id="name" [(ngModel)]="dog.name" />
+  </div>
+  <div>
+    <label for="name">年齡</label>
+    <input type="number" id="years" [(ngModel)]="dog.years" />
+  </div>
+  <div>
+    <label for="name">種類</label>
+    <input type="text" id="variety" [(ngModel)]="dog.variety" /><br>
+  </div>
+  <button (click)="onDleteDog(dog)">刪除狗狗</button>
+</div>
+<!-- </p-table> -->
